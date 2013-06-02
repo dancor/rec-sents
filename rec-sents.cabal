@@ -9,8 +9,10 @@ build-depends:
     base
   , FUtil
   , process
+  , split
   , unix
 
 executable:      rec-sents
 main-is:         RecSents.hs
 hs-source-dirs:  src
+ghc-options:     -Wall
