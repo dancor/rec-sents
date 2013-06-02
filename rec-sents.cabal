@@ -3,13 +3,14 @@ version:         0.1
 license:         BSD3
 license-file:    LICENSE
 author:          dan corson <danl@alum.mit.edu>
-synopsis:        <syn>
+synopsis:        record spoken sentences for foreign language practice
 build-type:      Simple
-build-depends:   base
+build-depends:
+    base
+  , FUtil
+  , process
+  , unix
 
 executable:      rec-sents
-main-is:         Main.hs
-hs-source-dirs:  src
-
-exposed-modules: rec-sents
+main-is:         RecSents.hs
 hs-source-dirs:  src
